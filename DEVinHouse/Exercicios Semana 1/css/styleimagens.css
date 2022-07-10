@@ -1,0 +1,13 @@
+.imagem {
+  width: 600px;
+  height: 600px;
+}
+
+.linha {
+  display: flex;
+}
+
+.coluna {
+  flex: 33.33%;
+  padding: 5px;
+}
