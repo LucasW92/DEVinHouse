@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      let pesovirgula = window.prompt("Informe seu peso: ");
+      let alturavirgula = window.prompt("Informe sua altura: ");
+      let peso = parseFloat(pesovirgula.replace(",", "."));
+      let altura = parseFloat(alturavirgula.replace(",", "."));
+
+      const IMC = peso / (altura * altura);
+
+      if (IMC > 25) {
+        window.alert("Você está acima do peso, procure um médico");
+      } else if (IMC >= 18.5 && IMC <= 24.9) {
+        window.alert("PARABÉNS!! Você está no peso ideal");
+      } else {
+        window.alert("Você está abaixo do peso, procure um médico");
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>

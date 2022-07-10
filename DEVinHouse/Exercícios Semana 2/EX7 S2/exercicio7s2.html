@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let entrevistados = 0;
+      let notaRuim = 0;
+
+      while (entrevistados < 4) {
+        let resposta = window.prompt(
+          `Por gentileza, qual sua avaliação da série Stranger Things? Digite 1 para excelente, 2 para bom e 3 para ruim`
+        );
+        if (Number(resposta) === 3) {
+          notaRuim++;
+        }
+        entrevistados++;
+      }
+
+      window.alert(
+        `O total de pessoas que deram avalição ruim a série é de ${notaRuim}`
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
